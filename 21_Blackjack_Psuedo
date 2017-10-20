@@ -48,5 +48,5 @@ Else:
     Whoever's cards are closest to summing up to 21 wins.
     Game ends.
   Else if (2 or more players have cards with equal value and are closest to 21):
-    The two players "push" (tie).
+    The players "push" (tie).
     Game ends.
