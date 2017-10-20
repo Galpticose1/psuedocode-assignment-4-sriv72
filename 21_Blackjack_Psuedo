@@ -29,6 +29,7 @@ For (each player in the game * 3 rounds):
         Game ends.
       Else if (cards greater than 21):
         Player has "busted" and is out of game.
+        Dealer proceeds to next player.
       Else:
         Play continues as normal.
         Dealer proceeds to next player.
