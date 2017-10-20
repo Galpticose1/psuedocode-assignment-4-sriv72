@@ -1,0 +1,48 @@
+/* 
+The game involves a dealer and multiple players.
+(This version doesn't involve betting).
+*/
+
+//Game Setup
+For (each player in the game):
+  //The dealer of the game deals out 2 cards.
+  If (no cards are dealed out):
+    Dealer deals out one card face down.
+  Else:
+    Dealer deals one card face up.
+
+Players check their cards.
+If (the two cards add up in value to 21):
+  "Blackjack" called by the player.
+  Game ends.
+Else:
+  Play begins as normal.
+
+//Gameplay
+For (each player in the game * 3 rounds): 
+  Dealer asks if player "hits" or "stands".
+  If (player calls out "hit"):
+    Dealer deals a card face down to the player
+    Player checks card
+      If (cards are equal to 21):
+        Player wins.
+        Game ends.
+      Else if (cards greater than 21):
+        Player has "busted" and is out of game.
+      Else:
+        Play continues as normal.
+        Dealer proceeds to next player.
+  Else if (player calls out "stand"):
+    No card is dealed to the player.
+    Dealer proceeds to next player.
+  Proceed until one player is left or all turns complete.
+
+//Game Results (if no one recieves exactly 21)
+If (only one player hasn't "busted"):
+  Player wins.
+  Game ends.
+Else:
+  Compare the cards of whoever hasn't busted.
+  Whoever's cards are closest to summing up to 21 wins.
+  Game ends.
+  
