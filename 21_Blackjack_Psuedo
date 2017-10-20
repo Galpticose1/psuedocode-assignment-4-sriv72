@@ -1,6 +1,6 @@
 /* 
 The game involves a dealer and multiple players.
-(This version doesn't involve betting).
+(This version doesn't involve betting or playing against the dealer).
 */
 
 //Game Setup
@@ -10,6 +10,12 @@ For (each player in the game):
     Dealer deals out one card face down.
   Else:
     Dealer deals one card face up.
+
+//Value of Each Card
+Cards 2 through 9= Respective values
+Aces= 1 or 11 (depending on need)
+Jacks, Queens, Kings and 10 = 10
+
 
 Players check their cards.
 If (the two cards add up in value to 21):
