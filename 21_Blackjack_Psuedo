@@ -44,5 +44,9 @@ If (only one player hasn't "busted"):
   Game ends.
 Else:
   Compare the cards of whoever hasn't busted.
-  Whoever's cards are closest to summing up to 21 wins.
-  Game ends.
+  If (everyone's cards add up to a different value):
+    Whoever's cards are closest to summing up to 21 wins.
+    Game ends.
+  Else if (2 or more players have cards with equal value and are closest to 21):
+    The two players "push" (tie).
+    Game ends.
